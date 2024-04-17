@@ -1,4 +1,4 @@
-module translator
+module github.com/Miemiemiemieqiang/translator
 
 go 1.20
 
