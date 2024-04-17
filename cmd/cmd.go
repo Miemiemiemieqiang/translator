@@ -16,7 +16,8 @@ func Translate(bytes []byte, r, w string) ([]byte, error) {
 	return manager.Translate(bytes, read, write)
 }
 
-func AutoTranslate(manager *mgt.Manager, bytes []byte, write translate.Type) ([]byte, error) {
+func AutoTranslate(bytes []byte, write translate.Type) ([]byte, error) {
+	manager := mgt.DefaultManager
 	read := manager.PredicateReader(bytes)
 	return manager.Translate(bytes, read, write)
 }
