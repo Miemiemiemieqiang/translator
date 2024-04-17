@@ -2,6 +2,7 @@ package mgt
 
 import (
 	"github.com/Miemiemiemieqiang/translator/core"
+	"github.com/Miemiemiemieqiang/translator/translate/csv"
 	"github.com/Miemiemiemieqiang/translator/translate/json"
 	"github.com/Miemiemiemieqiang/translator/translate/sqltext"
 	"github.com/Miemiemiemieqiang/translator/translate/yaml"
@@ -13,6 +14,7 @@ func newManager() *Manager {
 	manager := NewManager()
 	manager.RegisterBid(yaml.NewTranslate())
 	manager.RegisterBid(json.NewTranslate())
+	manager.RegisterBid(csv.NewTranslate())
 	manager.RegisterReader(sqltext.NewTranslate())
 	return manager
 }

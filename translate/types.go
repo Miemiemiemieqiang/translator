@@ -8,6 +8,7 @@ const (
 	Unknown Type = 1 << iota
 	JSON
 	YAML
+	CSV
 	SQLText
 )
 
@@ -18,6 +19,8 @@ func GetType(name string) Type {
 		return JSON
 	case "yaml", "yml":
 		return YAML
+	case "csv":
+		return CSV
 	case "sqltext", "sql":
 		return SQLText
 	default:

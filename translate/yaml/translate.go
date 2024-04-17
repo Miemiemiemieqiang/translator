@@ -33,7 +33,7 @@ func (t Translate) Read(bytes []byte) (*core.Core, error) {
 }
 
 func (t Translate) Config() core.Config {
-	return core.NewConfig(core.WithType(translate.YAML))
+	return core.NewConfig(core.WithType(translate.YAML), core.WithRecurse(true))
 }
 
 func (t Translate) Write(core *core.Core) ([]byte, error) {

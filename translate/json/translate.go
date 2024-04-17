@@ -38,7 +38,7 @@ func (t Translate) Read(bytes []byte) (*core.Core, error) {
 }
 
 func (t Translate) Config() core.Config {
-	return core.NewConfig(core.WithType(translate.JSON))
+	return core.NewConfig(core.WithType(translate.JSON), core.WithRecurse(true))
 }
 
 func (t Translate) Write(c *core.Core) ([]byte, error) {

@@ -19,7 +19,6 @@ var (
 
 func (t Translate) Config() core.Config {
 	return core.NewConfig(core.WithType(translate.SQLText))
-
 }
 
 func (t Translate) Predicate([]byte) bool {
@@ -28,7 +27,7 @@ func (t Translate) Predicate([]byte) bool {
 }
 
 func (t Translate) Read(bytes []byte) (*core.Core, error) {
-	results := make([]map[string]string, 0)
+	results := make([]map[string]interface{}, 0)
 	headers := make([]string, 0)
 	text := string(bytes)
 	hf := false
@@ -40,7 +39,7 @@ func (t Translate) Read(bytes []byte) (*core.Core, error) {
 				hf = true
 			} else {
 				rows := splitLine(v)
-				result := make(map[string]string)
+				result := make(map[string]interface{})
 				for i, header := range headers {
 					result[header] = rows[i]
 				}

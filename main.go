@@ -21,7 +21,7 @@ func main() {
 		panic(err)
 	}
 	manager := mgt.DefaultManager
-	output, err := manager.Translate(input, translate.JSON, translate.YAML)
+	output, err := manager.Translate(input, translate.JSON, translate.CSV)
 	if err != nil {
 		panic(err)
 	}
