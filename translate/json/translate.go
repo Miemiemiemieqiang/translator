@@ -2,8 +2,8 @@ package json
 
 import (
 	"encoding/json"
-	"translator/core"
-	"translator/translate"
+	"github.com/Miemiemiemieqiang/translator/core"
+	"github.com/Miemiemiemieqiang/translator/translate"
 )
 
 type Translate struct {

@@ -1,9 +1,9 @@
 package sqltext
 
 import (
+	"github.com/Miemiemiemieqiang/translator/core"
+	"github.com/Miemiemiemieqiang/translator/translate"
 	"strings"
-	"translator/core"
-	"translator/translate"
 )
 
 type Translate struct {

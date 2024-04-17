@@ -1,10 +1,10 @@
 package mgt
 
 import (
-	"translator/core"
-	"translator/translate/json"
-	"translator/translate/sqltext"
-	"translator/translate/yaml"
+	"github.com/Miemiemiemieqiang/translator/core"
+	"github.com/Miemiemiemieqiang/translator/translate/json"
+	"github.com/Miemiemiemieqiang/translator/translate/sqltext"
+	"github.com/Miemiemiemieqiang/translator/translate/yaml"
 )
 
 var DefaultManager = newManager()

@@ -1,6 +1,6 @@
 package core
 
-import "translator/translate"
+import "github.com/Miemiemiemieqiang/translator/translate"
 
 type Config struct {
 	Type translate.Type

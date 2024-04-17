@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"translator/mgt"
-	"translator/translate"
+	"github.com/Miemiemiemieqiang/translator/mgt"
+	"github.com/Miemiemiemieqiang/translator/translate"
 )
 
 func Translate(bytes []byte, r, w string) ([]byte, error) {

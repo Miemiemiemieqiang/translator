@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"github.com/Miemiemiemieqiang/translator/mgt"
+	"github.com/Miemiemiemieqiang/translator/translate"
 	"io"
 	"os"
-	"translator/mgt"
-	"translator/translate"
 )
 
 func main() {

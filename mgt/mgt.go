@@ -1,9 +1,9 @@
 package mgt
 
 import (
+	"github.com/Miemiemiemieqiang/translator/core"
+	"github.com/Miemiemiemieqiang/translator/translate"
 	"sync"
-	"translator/core"
-	"translator/translate"
 )
 
 type Manager struct {

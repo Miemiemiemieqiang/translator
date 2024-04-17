@@ -1,9 +1,9 @@
 package yaml
 
 import (
+	"github.com/Miemiemiemieqiang/translator/core"
+	"github.com/Miemiemiemieqiang/translator/translate"
 	"gopkg.in/yaml.v2"
-	"translator/core"
-	"translator/translate"
 )
 
 type Translate struct {
